@@ -41,13 +41,13 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
+          
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+          <li class="nav__item"><a href="#Experience" class="nav__link">Experience</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#Education" class="nav__link">Education</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -56,17 +56,17 @@
       <div class="header__text">
         <h1 class="heading-primary">
           <!-- Replace the following name with your name -->
-          <span>Syed Ali Hussnain</span>
+          <span>Aneeq Ur Rahman Mohammed</span>
         </h1>
         <!-- Put a small paragraph about yourself -->
-        <p>A Web Developer based in Lahore, Pakistan.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+        <p>Results-driven Mobile Developer with expertise in Flutter, Kotlin, and Java. Specializing in creating high-performance apps and enhancing user experiences. Let’s build something amazing together!</p>
+        <a href="#about" class="btn btn--pink">About Me</a>
       </div>
     </div>
   </header>
 
+  
   <main role="main">
-
     <!-- ***** Work ***** -->
 
     <section class="work" id="work">
@@ -162,22 +162,118 @@
       </div>
     </section>
 
-    <!-- ***** Clients ***** -->
+   <!-- ***** Experience ***** -->
 
-    <section class="client" id="clients">
-      <div class="row">
-        <h2>Clients</h2>
-        <div class="client__logos">
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+<section class="experience" id="Experience">
+  <div class="row">
+    <h2>Experience</h2>
+    <div class="experience__container">
+      
+      <!-- University of Houston -->
+      <div class="experience__item">
+        <img src="./images/uoh.png" class="experience__logo" alt="University of Houston" />
+        <div class="experience__details">
+          <h3>Flutter Developer and Instructional Assistant</h3>
+          <p class="experience__company">University of Houston</p>
+          <p class="experience__duration">(Nov 2022-May 2024)</p>
+          <ul class="experience__responsibilities">
+            <li>Developed 3 cross-platform apps using Flutter, Kotlin, and Firebase, improving learning for 200+ students with MVVM, Room, and Retrofit.</li>
+            <li>Led 25+ lab sessions on Android, iOS and Flutter, enhancing student skills by 35% in UI/UX, state management with Provider, and Kotlin Coroutines.</li>
+            <li>Built and tested a custom lab app with Flutter and Firebase, increasing assignment submissions by 40% and on-time completion by 20%, using Flutter Driver and JUnit for testing.</li>
+          </ul>
         </div>
       </div>
-    </section>
+
+      <!-- Tata Consultancy Services -->
+      <div class="experience__item">
+        <img src="./images/tcs.jpg" class="experience__logo" alt="Tata Consultancy Services" />
+        <div class="experience__details">
+          <h3>Application Development Analyst</h3>
+          <p class="experience__company">Tata Consultancy Services</p>
+          <p class="experience__duration">(Jun 2021–Aug 2022)</p>
+          <ul class="experience__responsibilities">
+            <li>Spearheaded and maintained Java and Flutter applications for UK financial clients, impacting 5 major banking systems using the Temenos Transact Core Banking platform.</li>
+            <li>Enhanced application performance and reliability by implementing automated testing (Selenium) within the CI/CD pipeline, integrating Flutter for cross-platform deployment, reducing deployment time by 40%, and improving system uptime by 25%.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Zluri Pvt Ltd -->
+      <div class="experience__item">
+        <img src="./images/Zluri.png" class="experience__logo" alt="Zluri Pvt Ltd" />
+        <div class="experience__details">
+          <h3>Android Development Engineer Intern</h3>
+          <p class="experience__company">Zluri Pvt Ltd</p>
+          <p class="experience__duration">(May 2020–Jun 2021)</p>
+          <ul class="experience__responsibilities">
+            <li>Developed and maintained the Zluri Manager app using Kotlin, Java, Android SDK, MVVM architecture, Retrofit, Room, SQLite, Dagger2, Kotlin Coroutines, and Firebase.</li>
+            <li>Conducted testing and debugging with SIT, UAT, Gradle, Espresso, and UI Automator, enhancing stability by 30%, and utilized GraphQL for efficient data fetching and dynamic UI updates.</li>
+            <li>Collaborated to UX/UI design for intuitive user interactions and participated in code reviews to improve code quality.</li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ***** Skills ***** -->
+
+<section class="skills" id="skills">
+  <div class="row">
+    <h2>Technical Skills</h2>
+    <div class="skills__container">
+      <div class="skills__category">
+        <h3>Mobile Development</h3>
+        <p>Flutter (Dart), Kotlin, Java, Swift, iOS SDK, Android SDK, MVVM, Retrofit, Room, Dagger2, Kotlin Coroutine, Bloc, Riverpod, Provider, Swift, iOS SDK, CoreData</p>
+      </div>
+      <div class="skills__category">
+        <h3>Testing and Design</h3>
+        <p>Flutter Driver, JUnit SIT, UAT, Gradle, Espresso, UI Automator, GraphQL, Mockitto, UX/UI Design</p>
+      </div>
+      <div class="skills__category">
+        <h3>Cloud Technologies</h3>
+        <p>Firebase (Firestore, Authentication, Cloud Functions, Storage), AWS (S3, Lambda, DynamoDB), Google Cloud Platform (Cloud Storage, Compute Engine), Microsoft (SQL, Mongo DB), Docker, Kubernetes, CI/CD (Jenkins, GitLab CI), Terraform, Figma </p>
+      </div>
+      <div class="skills__category">
+        <h3>Methodologies</h3>
+        <p>Scrum, Agile, Kanban, DevOps, TDD, FDD</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ***** Education ***** -->
+
+<section class="education" id="Education">
+  <div class="row">
+    <h2>Education</h2>
+    <div class="education__container">
+      
+      <!-- University of Houston -->
+      <div class="education__item">
+        <img src="./images/uoh.png" class="education__logo" alt="University of Houston" />
+        <div class="education__details">
+          <h3>MS in Computer Systems and Engineering</h3>
+          <p class="education__institution">University of Houston | GPA: 3.9/4 | Houston, TX | August 2022 - May 2024</p>
+          <p class="education__coursework">Coursework: Cloud Computing, Big Data Analytics, Data & Info Visualization, Cybersecurity, Adv. Comp Architect.</p>
+        </div>
+      </div>
+
+      <!-- Osmania University -->
+      <div class="education__item">
+        <img src="./images/os.jpg" class="education__logo" alt="Osmania University" />
+        <div class="education__details">
+          <h3>BE in Electronics and Communication Engineering</h3>
+          <p class="education__institution">Osmania University | GPA: 8.7/10 | Hyderabad, India | July 2017 - July 2021</p>
+          <p class="education__coursework">Coursework: Object Oriented Programming using Java, Electronic Devices, Computer Organization & Architecture</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
 
     <!-- ***** About ***** -->
 
@@ -188,43 +284,26 @@
           <div class="about__text">
             <!-- Replace the below paragraph with info about yourself -->
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
+              I’m Aneeq Ur Rahman, a passionate Mobile Developer with over three years of experience in crafting high-performance Android and iOS applications. My expertise lies in Flutter, Kotlin, and Java, where I focus on delivering exceptional user experiences and optimizing application performance.
             </p>
+            <p>
+      With a recent MS in Computer Systems and Engineering, I have a strong background in cloud technologies, cross-platform development, and modern development frameworks. I thrive on improving workflows and leveraging DevOps methodologies to achieve project goals efficiently.
+    </p>
+    <p>
+      I am currently seeking full-time opportunities to contribute my skills and drive impactful solutions in dynamic teams. Let’s connect and explore how I can help achieve your project objectives!
+    </p>
             <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
+            <a href="./files/Aneeq_Ur_Rahman_Mohammed_Resume.pdf" class="btn">My Resume</a>
           </div>
 
           <div class="about__photo-container">
             <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+            <img class="about__photo" src="./images/aneeq.jpg" alt="" />
           </div>
         </div>
       </div>
     </section>
   </main>
-
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
-      </div>
-    </div>
-  </section>
 
   <!-- ***** Footer ***** -->
 
@@ -233,22 +312,22 @@
       <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
         <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
+          <a href="mailto:mdaneequrrahman@gmail.com/" title="Link to Email">
+            <img src="./images/email.jpg" class="footer__social-image" alt="Email">
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
+          <a href="https://github.com/aneeq-rahman" target="_blank" title="Link to Github Profile">
             <img src="./images/github.svg" class="footer__social-image" alt="Github">
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
+          <a href="tel:+17132890474"  title="Link to Phone">
+            <img src="./images/phone.jpg" class="footer__social-image" alt="Phone">
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
+          <a href="https://www.linkedin.com/in/aneeq-rahman/" target="_blank">
             <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
           </a>
         </li>

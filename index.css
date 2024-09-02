@@ -338,7 +338,13 @@ body:not(.user-is-tabbing) a:focus {
 .nav {
     display: flex;
     justify-content: flex-end;
+    align-self: self-end;
     padding: var(--gutter-normal) 0;
+    background:#000000;
+    top: 0;
+    margin-right: 10rem ;
+    right: 0;
+    position: fixed
 }
 
 .nav__items {
@@ -435,6 +441,47 @@ body:not(.user-is-tabbing) a:focus {
         transform: scale(.8);
     }
 }
+/* --------------------------------------- */
+/* ----- Skills ----- */
+/* --------------------------------------- */
+
+/* Skills Section */
+.skills {
+    background: #000000; /* Matching background color with experience */
+    padding: 3rem 2rem;
+}
+
+.skills__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skills__category {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skills__category h3 {
+    margin: 0;
+    font-size: 3rem; /* Matching font size with experience titles */
+    color: #ffffff; /* Matching color with experience section */
+}
+
+.skills__category p {
+    margin: 0;
+    font-size: 1.5rem; /* Matching font size with experience items */
+    color: #ffffff; /* Matching color with experience section */
+}
+
+/* Responsive adjustments */
+@media(max-width: 768px) {
+    .skills__container {
+        flex-direction: column;
+    }
+}
+
 
 /* --------------------------------------- */
 /* ----- Work ----- */
@@ -506,62 +553,211 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* --------------------------------------- */
-/* ----- Clients ----- */
+/* ----- Experience ----- */
 /* --------------------------------------- */
 
-.client__logos {
-    display: flex;
-    justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
-}
-
-.client__logo {
+/* Experience Section */
+.experience__logo {
     height: 6.5rem;
     max-width: 18rem;
+    /* Ensure logos have consistent spacing and appearance */
+    object-fit: contain; /* Ensures logos maintain their aspect ratio */
 }
 
-@media(max-width: 1240px) {
-    .client__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
+
+.experience__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.experience__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.experience__details {
+    max-width: 100%;
+}
+
+.experience__details h3 {
+    margin: 0;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.experience__company {
+    margin: 0.5rem 0;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.experience__duration {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.experience__responsibilities {
+    list-style: disc inside;
+    padding-left: 0;
+}
+
+.experience__responsibilities li {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media(max-width: 768px) {
+    .experience__item {
+        flex-direction: column;
     }
 
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
+    .experience__details {
+        max-width: 100%;
     }
 }
+
+/* --------------------------------------- */
+/* ----- Education ----- */
+/* --------------------------------------- */
+
+.education__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.education__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.education__logo {
+    height: 6.5rem;
+    max-width: 12rem;
+    object-fit: contain; /* Ensures logos maintain their aspect ratio */
+}
+
+.education__details {
+    max-width: 100%;
+}
+
+.education__details h3 {
+    margin: 0;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.education__institution {
+    margin: 0.5rem 0;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.education__gpa, .education__location, .education__date {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.education__coursework {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media(max-width: 768px) {
+    .education__item {
+        flex-direction: column;
+    }
+
+    .education__details {
+        max-width: 100%;
+    }
+}
+
 
 /* --------------------------------------- */
 /* ----- About ----- */
 /* --------------------------------------- */
 
+/* About Section */
+.about {
+    background: #000000; /* Matches the experience section */
+    padding: 3rem 2rem;
+}
+
 .about__content {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    gap: 1rem; /* Adjust space between text and photo */
 }
 
-@media(max-width: 900px) {
-    .about__content {
-        flex-direction: column-reverse;
-        align-items: initial;
-    }
+.about__text {
+    color: #ffffff; /* Ensure text is readable */
+    flex: 1; /* Allow text to use available space */
+    margin: 0; /* Remove extra margins */
+    font-size: 2rem;
 }
 
 .about__photo-container {
-    margin-bottom: var(--gutter-normal);
+    margin-bottom: 0; /* Remove bottom margin */
+    flex: 0 0 auto; /* Ensure photo container does not grow */
 }
 
-@media(min-width: 901px) {
+.about__photo {
+    width: 100%;
+    max-width: 500px; /* Adjusted for reduced space */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* Responsive adjustments for smaller screens */
+@media(max-width: 2000px) {
+    .about__content {
+        flex-direction: column-reverse;
+        gap: 1rem; /* Adjust space between text and photo for small screens */
+    }
+
+    .about__photo-container {
+        margin-bottom: 1rem; /* Adjust spacing below photo for small screens */
+    }
+}
+
+@media(min-width: 1500px) {
     .about__text {
         flex: 0 0 35%;
     }
     
     .about__photo-container {
         flex: 1;
-        margin: 0 var(--gutter-huge) 0 0;
+        margin: 0 1rem 0 0; /* Adjust horizontal margin between text and photo */
     }
 }
+
+/* Button Styling */
+.btn {
+    background-color: #ff3258; /* Custom button color */
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px; /* Rounded corners */
+    font-size: 1.8rem; /* Adjust font size for better readability */
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e60046; /* Darker shade on hover */
+}
+
+
 
 /* --------------------------------------- */
 /* ----- Contact ----- */
