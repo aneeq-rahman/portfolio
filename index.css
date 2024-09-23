@@ -340,7 +340,7 @@ body:not(.user-is-tabbing) a:focus {
     justify-content: flex-end;
     align-self: self-end;
     padding: var(--gutter-normal) 0;
-    background:#000000;
+    background: rgba(0, 0, 0, 0.25);
     top: 0;
     margin-right: 10rem ;
     right: 0;
